@@ -32,19 +32,31 @@
     <h2 class="text-2xl font-bold text-purple-800 mb-6">Nossa Equipe</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
       <!-- 12 membros fictícios -->
+
       <script>
-        const nomes = [
-          "ADRYANO PIMENTEL BORGES"," JOAO PEDRO GARCIA NAVES LEITE","KARLLA DANYELLA COSTA OLIVEIRA","KARYNNE DE JESUS SOARES",
-          "LEANDRA ALVES SOARES","LUCAS HENRIQUE PEREIRA SILVA","LUIZ FELIPE SILVA","MARIA CLARA DE SOUZA ANDRADE",
-          "MURILLO HENRIQUE SANTANA","PEDRO MACHADO DE LORENA","WILTON GONÇALVES DE ARAUJO FILHO","MARCUS CARRIAO DOS SANTOS"
-        ];
-        document.write(nomes.map(nome => `
-          <div class=\"bg-white p-4 rounded-2xl shadow text-center\">
-            <img src=\"https://via.placeholder.com/150\" class=\"rounded-full mx-auto mb-3\">
-            <p class=\"font-semibold\">${nome}</p>
-          </div>
-        `).join(''));
-      </script>
+  const equipe = [
+    { nome: "ADRYANO PIMENTEL BORGES", foto: "imagens/adryano.jpg" },
+    { nome: "JOAO PEDRO GARCIA NAVES LEITE", foto: "imagens/joao.jpg" },
+    { nome: "KARLLA DANYELLA COSTA OLIVEIRA", foto: "imagens/karlla.jpg" },
+    { nome: "KARYNNE DE JESUS SOARES", foto: "imagens/karynne.jpg" },
+    { nome: "LEANDRA ALVES SOARES", foto: "imagens/leandra.jpg" },
+    { nome: "LUCAS HENRIQUE PEREIRA SILVA", foto: "imagens/lucas.jpg" },
+    { nome: "LUIZ FELIPE SILVA", foto: "imagens/luiz.jpg" },
+    { nome: "MARIA CLARA DE SOUZA ANDRADE", foto: "imagens/maria.jpg" },
+    { nome: "MURILLO HENRIQUE SANTANA", foto: "imagens/murillo.jpg" },
+    { nome: "PEDRO MACHADO DE LORENA", foto: "imagens/pedro.jpg" },
+    { nome: "WILTON GONÇALVES DE ARAUJO FILHO", foto: "imagens/wilton.jpg" },
+    { nome: "MARCUS CARRIAO DOS SANTOS", foto: "imagens/marcus.jpg" }
+  ];
+
+  document.write(equipe.map(pessoa => `
+    <div class="bg-white p-4 rounded-2xl shadow text-center">
+      <img src="${pessoa.foto}" class="rounded-full mx-auto mb-3 w-32 h-32 object-cover">
+      <p class="font-semibold">${pessoa.nome}</p>
+    </div>
+  `).join(''));
+</script>
+      
     </div>
   </section>
 
