@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pingado - Robô autônomo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-purple-800 text-white p-6 shadow-lg">
+    <h1 class="text-3xl font-bold">Pingado ☕</h1>
+    <p class="text-sm">Tecnologia inteligente para o cultivo de café</p>
+  </header>
+
+  <!-- Produto -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold text-purple-800 mb-4">Nosso Produto</h2>
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <img src="https://via.placeholder.com/500x300" alt="Robô Pingado" class="rounded-2xl shadow">
+      <p>
+        O <strong>Pingado</strong> é um robô autônomo desenvolvido para atuar em plantações de café.
+        Sua principal função é "virar o café" ao longo do dia, garantindo uma secagem uniforme e
+        melhorando a qualidade final do produto.
+      </p>
+    </div>
+  </section>
+
+  <!-- Equipe -->
+  <section class="bg-purple-100 p-8">
+    <h2 class="text-2xl font-bold text-purple-800 mb-6">Nossa Equipe</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- 12 membros fictícios -->
+      <script>
+        const nomes = [
+          "ADRYANO PIMENTEL BORGES"," JOAO PEDRO GARCIA NAVES LEITE","KARLLA DANYELLA COSTA OLIVEIRA","KARYNNE DE JESUS SOARES",
+          "LEANDRA ALVES SOARES","LUCAS HENRIQUE PEREIRA SILVA","LUIZ FELIPE SILVA","MARIA CLARA DE SOUZA ANDRADE",
+          "MURILLO HENRIQUE SANTANA","PEDRO MACHADO DE LORENA","WILTON GONÇALVES DE ARAUJO FILHO","MARCUS CARRIAO DOS SANTOS"
+        ];
+        document.write(nomes.map(nome => `
+          <div class=\"bg-white p-4 rounded-2xl shadow text-center\">
+            <img src=\"https://via.placeholder.com/150\" class=\"rounded-full mx-auto mb-3\">
+            <p class=\"font-semibold\">${nome}</p>
+          </div>
+        `).join(''));
+      </script>
+    </div>
+  </section>
+
+  <!-- Princípios -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold text-purple-800 mb-4">Princípios e Valores</h2>
+    <ul class="list-disc ml-6 space-y-2">
+      <li>Inovação tecnológica aplicada ao agronegócio</li>
+      <li>Sustentabilidade e respeito ao meio ambiente</li>
+      <li>Eficiência e otimização de processos agrícolas</li>
+      <li>Compromisso com qualidade e excelência</li>
+      <li>Trabalho em equipe e colaboração</li>
+    </ul>
+  </section>
+
+  <!-- Contato -->
+  <section class="bg-purple-800 text-white p-8">
+    <h2 class="text-2xl font-bold mb-4">Contato</h2>
+    <p>Email: pingado.jacu@gmail.com</p>
+    <p>Telefone: (62) 99999-9999</p>
+    <p>Instagram: @pingado.tech</p>
+    <p>LinkedIn: Pingado Tech</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 text-sm text-gray-500">
+    © 2026 Pingado - Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
